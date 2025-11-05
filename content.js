@@ -42,7 +42,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
           const preview = text;
           
           sendResponse({
-            text: "Нашёл ссылку ✅\n\nURL: " + foundLink + "\n\nФрагмент текста:\n" + preview
+            text: "Нашёл ссылку ✅ URL: " + foundLink + preview
           });
         } else {
           sendResponse({ text: "Ошибка при загрузке: " + xhr.status });

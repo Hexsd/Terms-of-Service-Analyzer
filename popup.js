@@ -3,7 +3,9 @@ const analyzeWithAI = document.getElementById("analyzeWithAI");
 const result = document.getElementById("result");
 
 const lmStudio = new LMStudioClient();
-
+document.getElementById('openOptions').addEventListener('click', () => {
+      chrome.tabs.create({ url: chrome.runtime.getURL('options.html') });
+    });
 analyz.addEventListener("click", async () => {
   result.textContent = "Анализирую...";
 

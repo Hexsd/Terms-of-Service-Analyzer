@@ -1,15 +1,29 @@
 body {
     text-align:center;
     width:300px;
+    background-color: #121212;
+    color: white;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 button {
     width:100%;
     color:white;
-    background:#a034e9;
+    background-color: #6c5ce7;
+    box-shadow: 0 4px 15px rgba(108, 92, 231, 0.4);
     border-width:0px;
     border-radius:20px;
-    padding:5px;
+    padding:10px;
+    font-size:14px;
+    margin-top:10px;
+    margin-bottom:10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     cursor:pointer;
 }
+
